@@ -42,7 +42,7 @@ def message_slack(text):
 
 	try:
 		json_data = json.dumps(post)
-		req = request.Request("slack_API_endpoint_here",
+		req = request.Request("slack_API_key_here",
 			data=json_data.encode('ascii'),
 			headers={'Content-Type': 'application/json'})
 		resp = request.urlopen(req)
